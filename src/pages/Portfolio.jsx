@@ -16,7 +16,8 @@ function loadProjects(){
 
     // If no projects found or existing list is empty, seed some example projects
     // so the grid isn't empty. Use client images placed in `public/` as thumbnails.
-    const available = ['/client.jpg','/client2.jpg','/client3.jpg','/Client4.jpg']
+    const base = import.meta.env.BASE_URL
+    const available = [`${base}client.jpg`,`${base}client2.jpg`,`${base}client3.jpg`,`${base}Client4.jpg`]
     const names = [
       {client:'Dilip', place:'Bangalore'},
       {client:'Asha', place:'Chennai'},

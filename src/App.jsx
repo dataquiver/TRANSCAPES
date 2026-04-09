@@ -6,10 +6,10 @@ import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import Project from './pages/Project'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function App(){
-  // Note: your `public` folder currently contains `backround.jpg` (missing 'g').
-  // Use that filename so the site loads the image you placed there.
-  const defaultBg = '/backround.jpg'
+  const defaultBg = `${BASE}backround.jpg`
 
   useEffect(()=>{
     document.body.style.backgroundImage = `url(${defaultBg})`
